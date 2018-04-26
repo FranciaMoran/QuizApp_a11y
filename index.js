@@ -125,39 +125,43 @@ let i = -1;
 function questionPage(allQuestions) {
  i <= -1, i++;
   return `
-<section id="answer-area" role="region">
+  <html lang="en">
+  <main role="main">
 <form id="answers-displayed" role="form">
 <fieldset>
+    <h1>
     <legend id="question-area">${allQuestions[i].text}</legend>
-			<input type="radio" name="option" class="choices" value="${allQuestions[i].answer1}" checked>
-			<span>
-			${allQuestions[i].answer1}
-			</span>
-			</input>
-			</br>
-			<input type="radio" name="option" class="choices" value="${allQuestions[i].answer2}">
-			<span>
-			${allQuestions[i].answer2}
-			</span>
-			</input>
-			</br>
-			<input type="radio" name="option" class="choices" value="${allQuestions[i].answer3}">
-			<span>
-			${allQuestions[i].answer3}
-			</span>
-			</input>
-			</br>
-			<input type="radio" name="option" class="choices" value="${allQuestions[i].answer4}">
-			<span>
-			${allQuestions[i].answer4}
-			</span>
-			</input>
-			</br>
-			</fieldset>
-			<button id="check-answer" input type="submit">Check Answer</button>
-			<p id="answered-right-total">Correct Answers: ${correctAnswerScore}/10</p>
-		</form>
-		</section>`;
+    </h1>
+    <label>
+      <input type="radio" name="option" class="choices" value="${allQuestions[i].answer1}" checked>
+      ${allQuestions[i].answer1}
+      </input>
+      </label>
+      </br>
+      <label>
+      <input type="radio" name="option" class="choices" value="${allQuestions[i].answer2}">
+      ${allQuestions[i].answer2}
+      </input>
+      </label>
+      </br>
+      <label>
+      <input type="radio" name="option" class="choices" value="${allQuestions[i].answer3}">
+      ${allQuestions[i].answer3}
+      </input>
+      </label>
+      </br>
+      <label>
+      <input type="radio" name="option" class="choices" value="${allQuestions[i].answer4}">
+      ${allQuestions[i].answer4}
+      </input>
+      </label>
+      </br>
+      </fieldset>
+      <button id="check-answer" input type="submit">Check Answer</button>
+      <p id="answered-right-total">Correct Answers: ${correctAnswerScore}/10</p>
+    </form>
+    </main>
+    </html>`;
 }
 
 //will input questionPage in #quiz-section
@@ -185,20 +189,20 @@ function checkAnswerButton() {
 
 
 
-	
+  
 //will put feedbackPageWrong(); in #quiz-section
- function wrongTemplate () {	
+ function wrongTemplate () {  
   $('#quiz-section').html(feedbackPageWrong(answerExplanations));
 }
 
 //will display when user answer is wrong
 function feedbackPageWrong (answerExplanations) {
 return `
-<section role="region">
-<h3>That's Incorrect</h3>
+<main role="main">
+<h1 id="feedback">That's Incorrect</h1>
 <p id="explanation">${answerExplanations[i]}</p>
 <button id="continue-button">Continue</button>
-</section>`;
+</main>`;
 }
 
 //will put feedbackPageRight(); in #quiz-section when user is right.
@@ -213,10 +217,11 @@ let correctAnswerScore = 0;
 function feedbackPageRight () {
   correctAnswerScore <= -1, correctAnswerScore++;
 return `
-<section id="right-page" role="region">
-<h3>That's Correct!</h3>
+<main id="right-page" role="main">
+<h1 id="feedback">That's Correct!</h1>
 <p id="correct-paragraph">You know your history! Keep it up!</p>
-<button id="continue-button">Continue</button>`;
+<button id="continue-button">Continue</button>
+</main>`;
 }
 
 
@@ -233,19 +238,20 @@ $('#quiz-section').on("click", "#continue-button", function(event){
 }
 
 //This will put finalPage(); into #quiz-section.
-function finalTemplate () {	
+function finalTemplate () { 
   $('#quiz-section').html(finalPage());
 }
 
 //will display as last page.
 function finalPage () {
   return `
-  <section role="region">
-  <h3>Congratulations!</h3>
+  <main role="main">
+  <h1 id="congrats">Congratulations!</h1>
   <p id="end">You have completed the quiz.</br>Hope you enjoyed learning a little bit more about your country's history!</p>
   </br>
   <p id="final-score">Final Score: ${correctAnswerScore}/10</p>
   <button id="restart-button">Restart Quiz</button>
+  </main>
   `;
 }
 

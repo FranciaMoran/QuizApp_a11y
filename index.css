@@ -1,37 +1,47 @@
-h1 {
+#h1-intro {
   margin-top: 0;
   padding-top: 40px;
-	text-align: center;
-	font-size: 80px;
-	color: #ffffff;
-	text-shadow: 2px 2px #0000FF;
-	font-family: 'Tangerine', cursive;
+  text-align: center;
+  font-size: 80px;
+  color: #ffffff;
+  text-shadow: 2px 2px #0000FF;
+  font-family: 'Tangerine', cursive;
+}
+
+#feedback {
+  margin-top: 0;
+  padding-top: 40px;
+  text-align: center;
+  font-size: 50px;
+  color: #ffffff;
+  text-shadow: 2px 2px #0000FF;
 }
 
 #intro {
-	text-align: center;
-	margin-bottom: 10px;
-	padding-top: 140px;
-	padding-bottom: 20px;
-	font-size: 60px;
-	color: #ffffff;
-	text-shadow: 2px 2px #ff0000;
-	font-family: 'Tangerine', cursive;
+  text-align: center;
+  margin-bottom: 10px;
+  padding-top: 140px;
+  padding-bottom: 20px;
+  font-size: 60px;
+  color: #ffffff;
+  text-shadow: 2px 2px #ff0000;
+  font-family: 'Tangerine', cursive;
 }
 
 
 #end {
-	text-align: center;
-	padding-top: 25px;
-	padding-bottom: 10px;
-	font-size: 60px;
-	color: #ffffff;
-	text-shadow: 2px 2px #ff0000;
-	font-family: 'Tangerine', cursive;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 0;
+  margin-bottom: 5px;
+  font-size: 60px;
+  color: #ffffff;
+  text-shadow: 2px 2px #ff0000;
+  font-family: 'Tangerine', cursive;
 }
 
 #js-start-button {
-	display: block;
+  display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
@@ -44,17 +54,17 @@ h1 {
     border-width: 5px;
     border-color: #000000;
     border-radius: 12px;
-    font-family: Arial;
+    font-family: 'Great Vibes', cursive;
 }
 
 html {
-	background-image: url("https://news.yale.edu/sites/default/files/styles/featured_media/public/d6_files/1-YUAG_Trumbull-signing.jpg?itok=MXCNktTe");
-	  -webkit-background-size: cover;
+  background-image: url("https://news.yale.edu/sites/default/files/styles/featured_media/public/d6_files/1-YUAG_Trumbull-signing.jpg?itok=MXCNktTe");
+    -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-	height: 100%;
-	background-position: center;
-	background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #question-area {
@@ -63,9 +73,9 @@ html {
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-	height: 100%;
-	background-position: center;
-	text-align: center;
+  height: 100%;
+  background-position: center;
+  text-align: center;
   color: #ffffff;
   font-size: 30px;
   margin-bottom: 30px;
@@ -96,50 +106,47 @@ display: block;
     border-width: 5px;
     border-color: #000000;
     border-radius: 10px;
+    font-family: 'Great Vibes', cursive;
 }
 
-h3 {
+
+
+#congrats {
   margin-top: 0;
   padding-top: 2px;
+  padding-bottom: 0;
+  margin-bottom:  0;
   text-align: center;
-	font-size: 50px;
-	color: #ffffff;
-	text-shadow: 2px 2px #0000FF;
+  font-size: 50px;
+  color: #ffffff;
+  text-shadow: 2px 2px #0000FF;
 }
 
 #explanation {
   text-align: center;
-	padding-top: 160px;
-	padding-bottom: 20px;
-	font-size: 30px;
-	color: #ffffff;
-	text-shadow: 2px 2px #ff0000;
+  padding-top: 160px;
+  padding-bottom: 20px;
+  font-size: 30px;
+  color: #ffffff;
+  text-shadow: 2px 2px #ff0000;
 }
 
 #correct-paragraph {
   text-align: center;
-	padding-top: 160px;
-	padding-bottom: 20px;
-	font-size: 30px;
-	color: #ffffff;
-	text-shadow: 2px 2px #ff0000;
+  padding-top: 160px;
+  padding-bottom: 20px;
+  font-size: 30px;
+  color: #ffffff;
+  text-shadow: 2px 2px #ff0000;
 }
 
-span {
+label {
   color: #ffffff;
   font-size: 30px;
   display: inline-block;
-    vertical-align: top;
-    margin-right: 3%;
+  margin-left: 250px;
 }
 
-legend {  
-color: #ffffff;
-  font-size: 30px;
-  display: inline-block;
-    vertical-align: top;
-    margin-right: 3%;
-}
 
 #continue-button {
 display: block;
@@ -156,6 +163,7 @@ display: block;
     border-width: 5px;
     border-color: #000000;
     border-radius: 10px;
+    font-family: 'Great Vibes', cursive;
 }
 
 #restart-button {
@@ -163,6 +171,7 @@ display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+    margin-top: 5px;
     padding: 30px;
     font-size: 40px;
     background-image: url("https://opengameart.org/sites/default/files/parchment.jpg");
@@ -173,36 +182,34 @@ display: block;
     border-width: 5px;
     border-color: #000000;
     border-radius: 10px;
+    font-family: 'Great Vibes', cursive;
 }
 
 #answered-right-total {
   text-align: center;
-	padding-top: 60px;
-	padding-bottom: 40px;
-	font-size: 30px;
-	color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  font-size: 30px;
+  color: #ffffff;
 }
 
 #final-score {
   text-align: center;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	font-size: 60px;
-	color: #ffffff;
-	text-shadow: 2px 2px #ff0000;
-	font-family: 'Tangerine', cursive;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 60px;
+  color: #ffffff;
+  text-shadow: 2px 2px #ff0000;
+  font-family: 'Tangerine', cursive;
 }
 
-.choices {
-   display: inline-block;
-    vertical-align: top;
-}
 
 fieldset {
-	flex-direction: column;
-	justify-content: space-between;
-	min-height: 275px;
-	margin-bottom: 10px;
-	border: none;
-	padding: 2 10%;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 275px;
+  margin-bottom: 10px;
+  border: none;
+  padding: 2 10%;
 }
+
